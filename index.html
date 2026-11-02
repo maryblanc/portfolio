@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f2f0e9">
+  <meta name="description" content="Maria Blandzi — Engineer working across automotive systems, software and embedded electronics." id="meta-description">
+  <title>Maria Blandzi — Engineer</title>
+  <style>
+    :root{--paper:#f2f0e9;--ink:#20231f;--muted:#696d64;--line:#c9c9bd;--accent:#d64b2f;--green:#354d40;--mono:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;--sans:Arial,Helvetica,sans-serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}a:hover{color:var(--accent)}.wrap{width:min(1120px,calc(100% - 48px));margin:auto}
+    .top{height:68px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;font:11px var(--mono);letter-spacing:.08em;text-transform:uppercase}
+    .mark{display:flex;align-items:center;gap:10px}.dot{width:9px;height:9px;background:var(--accent);border-radius:50%}.top-right{display:flex;align-items:center;gap:24px}.top nav{display:flex;gap:25px}.lang-switch{display:flex;align-items:center;gap:5px;border-left:1px solid var(--line);padding-left:18px}.lang-switch button{appearance:none;border:0;background:transparent;color:var(--muted);font:11px var(--mono);padding:6px 4px;cursor:pointer}.lang-switch button[aria-pressed="true"]{color:var(--ink);font-weight:700;text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:4px}.lang-switch button:focus-visible{outline:1px solid var(--accent);outline-offset:3px}
+    .hero{padding:94px 0 82px;display:grid;grid-template-columns:1.5fr .7fr;gap:55px;align-items:end;border-bottom:1px solid var(--line)}
+    .eyebrow,.kicker{font:11px var(--mono);letter-spacing:.11em;text-transform:uppercase;color:var(--muted)}
+    h1{font-size:clamp(58px,9vw,112px);line-height:.88;letter-spacing:-.085em;font-weight:600;margin:25px 0 27px;max-width:780px}
+    h1 span{color:var(--accent)}.intro{font-size:clamp(18px,2vw,22px);line-height:1.45;max-width:610px;margin:0;color:#454941}
+    .hero-aside{border-left:1px solid var(--line);padding:5px 0 5px 25px;font:12px/1.8 var(--mono);color:var(--muted)}.hero-aside strong{display:block;color:var(--ink);font:600 15px var(--sans);margin:7px 0 20px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;gap:13px;padding:14px 17px;border:1px solid var(--ink);font:11px var(--mono);letter-spacing:.06em;text-transform:uppercase;transition:.18s}.btn.primary{background:var(--ink);color:var(--paper)}.btn:hover{background:var(--accent);border-color:var(--accent);color:white}
+    .section{padding:66px 0;border-bottom:1px solid var(--line)}.section-head{display:grid;grid-template-columns:1fr 2fr;gap:30px;margin-bottom:35px}.section-head h2{font-size:clamp(30px,4vw,46px);letter-spacing:-.06em;font-weight:500;margin:0}.section-head p{font-size:15px;line-height:1.65;color:var(--muted);max-width:560px;margin:5px 0 0}
+    .projects{display:grid;grid-template-columns:1fr 1fr;gap:0 42px}.project{padding:23px 0 26px;border-top:1px solid var(--line)}.project-top{display:flex;justify-content:space-between;gap:20px;align-items:baseline}.project h3{font-size:23px;letter-spacing:-.045em;font-weight:500;margin:0}.num{font:11px var(--mono);color:var(--accent)}.project .tag{font:10px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:9px 0 14px}.project p{font-size:14px;line-height:1.65;color:#53574f;margin:0;max-width:490px}.project ul{padding-left:17px;margin:13px 0 0;color:#53574f;font-size:13px;line-height:1.7}
+    .experience{display:grid;grid-template-columns:1fr 2fr;gap:30px;padding:20px 0;border-top:1px solid var(--line)}.experience .when{font:11px var(--mono);color:var(--muted);line-height:1.8}.experience h3{font-size:19px;font-weight:500;margin:0 0 5px;letter-spacing:-.03em}.experience p{margin:0;color:var(--muted);font-size:13px;line-height:1.6}
+    .skills{display:grid;grid-template-columns:repeat(4,1fr);gap:25px}.skill h3{font:11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin:0 0 13px}.skill p{font-size:14px;line-height:1.8;color:#4f534b;margin:0}
+    .education{display:grid;grid-template-columns:1fr 2fr;gap:30px}.education .degree{padding:17px 0;border-top:1px solid var(--line)}.degree h3{font-size:18px;font-weight:500;margin:0 0 6px}.degree p{font:12px/1.7 var(--mono);color:var(--muted);margin:0}
+    .contact{padding:76px 0 90px;display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:end}.contact h2{font-size:clamp(42px,7vw,76px);line-height:.95;letter-spacing:-.075em;font-weight:500;margin:15px 0 0}.contact-right{justify-self:end;width:min(100%,390px)}.contact-right p{font-size:15px;line-height:1.65;color:var(--muted);margin:0 0 20px}.email{font-size:clamp(17px,2vw,22px);border-bottom:1px solid var(--accent);padding-bottom:6px;display:inline-block}
+    footer{border-top:1px solid var(--line);padding:20px 0 28px;display:flex;justify-content:space-between;gap:20px;font:10px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+    @media(max-width:700px){.wrap{width:min(100% - 34px,560px)}.top{height:62px}.top-right{gap:10px}.top nav{gap:10px}.top nav a{font-size:9px}.lang-switch{padding-left:9px;gap:2px}.lang-switch button{font-size:10px;padding:6px 2px}.hero{padding:65px 0 55px;grid-template-columns:1fr;gap:30px}.hero-aside{border-left:0;border-top:1px solid var(--line);padding:17px 0 0}.section{padding:48px 0}.section-head{grid-template-columns:1fr;gap:13px}.projects{grid-template-columns:1fr}.experience,.education{grid-template-columns:1fr;gap:9px}.skills{grid-template-columns:1fr 1fr;gap:25px 18px}.contact{grid-template-columns:1fr;padding:55px 0}.contact-right{justify-self:start}.contact h2{font-size:58px}footer{font-size:9px}}
+  </style>
+</head>
+<body>
+  <header class="top wrap">
+    <a class="mark" href="#top"><span class="dot"></span> MARIA BLANDZI</a>
+    <div class="top-right"><nav aria-label="Main navigation" id="main-nav"><a href="#work" data-i18n="navWork">Work</a><a href="#background" data-i18n="navBackground">Background</a><a href="#contact" data-i18n="navContact">Contact</a></nav><div class="lang-switch" aria-label="Language selection"><button type="button" id="lang-pl" aria-pressed="true" lang="pl">PL</button><span aria-hidden="true">/</span><button type="button" id="lang-en" aria-pressed="false" lang="en">EN</button></div></div>
+  </header>
+  <main id="top" class="wrap">
+    <section class="hero">
+      <div>
+        <div class="eyebrow" data-i18n="eyebrow">Inżynierka / Poznań, Polska</div>
+        <h1 data-i18n="heroTitle">Łączę<br>światy<span>.</span></h1>
+        <p class="intro" data-i18n="intro">Łączę inżynierię pojazdów, oprogramowanie i systemy embedded — zamieniając dane, elektronikę i kod w praktyczne rozwiązania.</p>
+        <div class="actions">
+          <a class="btn primary" href="CV-Maria-Blandzi.pdf" target="_blank" rel="noopener"><span data-i18n="viewCv">Zobacz CV</span> <span>↗</span></a>
+          <a class="btn" href="#work"><span data-i18n="selectedWorkBtn">Wybrane projekty</span> <span>↓</span></a>
+        </div>
+      </div>
+      <aside class="hero-aside">
+        <span data-i18n="currently">OBECNIE</span><br><strong data-i18n="currentDegree">Inżynieria mechaniczna i samochodowa</strong>
+        <span data-i18n="previously">UKOŃCZONE</span><br><strong data-i18n="previousDegree">Informatyka · inż.</strong>
+        <span data-i18n="interests">OBSZARY ZAINTERESOWAŃ</span><br><strong data-i18n="interestList">Systemy pojazdów / dane / elektronika</strong>
+      </aside>
+    </section>
+
+    <section class="section" id="work">
+      <div class="section-head"><div class="kicker" data-i18n="workKicker">01 / Wybrane projekty</div><div><h2 data-i18n="workTitle">Projekty oparte na rzeczywistych systemach.</h2><p data-i18n="workIntro">Połączenie rozwiązywania problemów na torze, tworzenia systemów embedded i narzędzi programistycznych. Część projektów jest w trakcie realizacji; opisuję zakres prac, w które jestem zaangażowana.</p></div></div>
+      <div class="projects">
+        <article class="project"><div class="project-top"><h3>Endurance Motorsport</h3><span class="num">01</span></div><div class="tag">Inżynieria wyścigowa · FIM EWC</div><p data-i18n="ewcDesc">Praca na torze łącząca obsługę wyścigu, analizę osiągów i podejmowanie decyzji na podstawie danych w wyścigach długodystansowych.</p><ul><li data-i18n="ewc1">Opracowanie urządzenia opartego na ESP32 do zarządzania stintami, zliczania okrążeń i śledzenia okresów Safety Car.</li><li data-i18n="ewc2">Tworzenie narzędzi wspierających strategię wyścigową i decyzje operacyjne.</li><li data-i18n="ewc3">Wyścigi: Le Mans 24 Hours (2026), 8 Hours of Spa (2025), Bol d’Or (2025, 2026).</li></ul></article>
+        <article class="project"><div class="project-top"><h3>Electric BUGGY</h3><span class="num">02</span></div><div class="tag">Systemy embedded i automotive</div><p data-i18n="buggyDesc">Rozwój systemu telemetrycznego ESP32/C++ dla pojazdu elektrycznego, zbierającego dane ze sterownika silnika Kelly.</p><ul><li data-i18n="buggy1">Komunikacja RS232 i parsowanie ramek danych.</li><li data-i18n="buggy2">Przetwarzanie danych o obrotach silnika, prądzie, napięciu i stanie baterii.</li><li data-i18n="buggy3">Przepływ danych od sterownika przez zapis do dedykowanego dashboardu.</li></ul></article>
+        <article class="project"><div class="project-top"><h3>Video Telemetry Pipeline</h3><span class="num">03</span></div><div class="tag">Python · OCR · Przetwarzanie danych</div><p data-i18n="pipelineDesc">Pipeline w Pythonie, który przekształca telemetryczne dane wideo w uporządkowane i zweryfikowane dane.</p><ul><li data-i18n="pipeline1">Ekstrakcja tekstu, parsowanie, czyszczenie i walidacja.</li><li data-i18n="pipeline2">Agregacja danych i automatyczne generowanie raportów.</li><li data-i18n="pipeline3">Projekt rozwijany z myślą o publikacji naukowej.</li></ul></article>
+        <article class="project"><div class="project-top"><h3>IOIO GO</h3><span class="num">04</span></div><div class="tag">NCBR · Uczelnie Przyszłości</div><p data-i18n="ioioDesc">Indywidualny projekt innowacyjny: system wczesnego ostrzegania o pojazdach uprzywilejowanych, realizowany przy wsparciu Narodowego Centrum Badań i Rozwoju (NCBR).</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="background">
+      <div class="section-head"><div class="kicker" data-i18n="backgroundKicker">02 / Wykształcenie i doświadczenie</div><div><h2 data-i18n="backgroundTitle">Dwie inżynierskie perspektywy.</h2><p data-i18n="backgroundIntro">Informatyka daje mi narzędzia do tworzenia oprogramowania. Inżynieria pojazdów pozwala mi stosować je w rzeczywistych systemach technicznych.</p></div></div>
+      <div class="experience"><div class="when" data-i18n="raceWhen">SEZONOWO<br>2025–2026</div><div><h3>Race Engineer — LRP Poland</h3><p data-i18n="raceRole">FIM Endurance World Championship (EWC) · Obsługa wyścigu, analiza telemetryczna i narzędzia wykorzystywane na torze.</p></div></div>
+      <div class="experience"><div class="when" data-i18n="studyWhen">2024–2028<br>W TRAKCIE</div><div><h3 data-i18n="autoDegree">Inżynieria mechaniczna i samochodowa (inż.)</h3><p>Poznań University of Technology</p></div></div>
+      <div class="experience"><div class="when" data-i18n="csWhen">UKOŃCZONE<br>LUTY 2026</div><div><h3 data-i18n="csDegree">Informatyka (inż.)</h3><p data-i18n="finalGrade">Ocena końcowa: 4,5 / 5,0</p></div></div>
+    </section>
+
+    <section class="section">
+      <div class="section-head"><div class="kicker" data-i18n="toolkitKicker">03 / Narzędzia</div><div><h2 data-i18n="toolkitTitle">Technologie, z których korzystam.</h2></div></div>
+      <div class="skills">
+        <div class="skill"><h3>Programming</h3><p>Python<br>C++<br>SQL</p></div>
+        <div class="skill"><h3 data-i18n="skillAuto">Automotive i embedded</h3><p>ESP32<br>RS232<br>Vehicle telemetry<br>Data acquisition</p></div>
+        <div class="skill"><h3>Engineering</h3><p>MATLAB<br>Simulink<br>Stateflow<br>Control systems</p></div>
+        <div class="skill"><h3 data-i18n="skillOther">Pozostałe</h3><p>Git / GitHub<br>Data processing<br>Excel<br>Technical documentation</p></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head"><div class="kicker" data-i18n="beyondKicker">04 / Więcej niż kod</div><div><h2 data-i18n="beyondTitle">Współpraca ponad granicami i językami.</h2></div></div>
+      <div class="education">
+        <div class="kicker" data-i18n="languages">Języki</div>
+        <div class="degree"><h3>Polski <span style="color:var(--muted);font-size:14px">— ojczysty</span></h3><h3>Angielski <span style="color:var(--muted);font-size:14px">— C1, Cambridge CAE</span></h3><h3>Niemiecki <span style="color:var(--muted);font-size:14px">— B2, ACERT</span></h3></div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div><div class="kicker" data-i18n="contactKicker">05 / Kontakt</div><h2 data-i18n="contactTitle">Masz pomysł<br>na projekt?</h2></div>
+      <div class="contact-right"><p data-i18n="contactIntro">Interesują mnie technologie motoryzacyjne, systemy embedded, oprogramowanie i obszary, w których się łączą. Chętnie porozmawiam o nowych projektach i możliwościach współpracy.</p><a class="email" href="mailto:mariablan.racing@gmail.com">mariablan.racing@gmail.com ↗</a><div class="actions"><a class="btn primary" href="CV-Maria-Blandzi.pdf" target="_blank" rel="noopener"><span data-i18n="downloadCv">Pobierz CV</span> <span>↓</span></a></div></div>
+    </section>
+  </main>
+  <footer class="wrap"><span>MARIA BLANDZI · ENGINEER</span><span data-i18n="footerFocus">Automotive / Software / Embedded</span><span>© 2026</span></footer>
+
+  <script>
+    const translations = {
+      en: {
+        navWork:"Work",navBackground:"Background",navContact:"Contact",
+        eyebrow:"Engineer / Poznań, Poland",
+        heroTitle:'Making things<br>work <span>together.</span>',
+        intro:"I work across automotive engineering, software and embedded systems — turning vehicle data, electronics and code into practical tools.",
+        viewCv:"View my CV",selectedWorkBtn:"Selected work",
+        currently:"CURRENTLY",currentDegree:"Mechanical & Automotive Engineering",
+        previously:"PREVIOUSLY",previousDegree:"Computer Science · BEng",
+        interests:"INTERESTS",interestList:"Vehicle systems / data / electronics",
+        workKicker:"01 / Selected work",workTitle:"Projects built around real systems.",
+        workIntro:"A mix of trackside problem-solving, embedded development and software tools. Some are ongoing; the details below reflect the work I have been involved in.",
+        ewcDesc:"Trackside work combining race operations, performance analysis and data-driven decision-making in an endurance racing environment.",
+        ewc1:"Developed an ESP32-based device for stint management, lap counting and Safety Car tracking.",
+        ewc2:"Built tools supporting race strategy and operational decisions.",
+        ewc3:"Events: Le Mans 24 Hours (2026), 8 Hours of Spa (2025), Bol d’Or (2025, 2026).",
+        buggyDesc:"Developing an ESP32/C++ telemetry system for an electric vehicle, with data collected from a Kelly motor controller.",
+        buggy1:"RS232 communication and packet parsing.",
+        buggy2:"Processing motor RPM, current, voltage and battery data.",
+        buggy3:"Data flow from controller to storage and a dedicated dashboard.",
+        pipelineDesc:"A Python pipeline that converts video telemetry into structured, validated data.",
+        pipeline1:"Text extraction, parsing, cleaning and validation.",
+        pipeline2:"Aggregation and automated report generation.",
+        pipeline3:"Project in development towards academic publication.",
+        ioioDesc:"An individual innovation project: an early warning system for emergency vehicles, supported by the National Centre for Research and Development (NCBR).",
+        backgroundKicker:"02 / Background",backgroundTitle:"Two engineering perspectives.",
+        backgroundIntro:"Computer science gives me the tools to build software. Automotive engineering gives me the context to apply it to physical systems.",
+        raceWhen:"SEASONAL<br>2025–2026",raceRole:"FIM Endurance World Championship (EWC) · Race operations, telemetry analysis and trackside tools.",
+        studyWhen:"2024–2028<br>IN PROGRESS",autoDegree:"BEng, Mechanical & Automotive Engineering",
+        csWhen:"COMPLETED<br>FEB 2026",csDegree:"BEng, Computer Science",finalGrade:"Final grade: 4.5 / 5.0",
+        toolkitKicker:"03 / Toolkit",toolkitTitle:"Tools I use.",skillAuto:"Automotive & embedded",skillOther:"Other",
+        beyondKicker:"04 / Beyond the code",beyondTitle:"Working across teams and languages.",languages:"Languages",
+        contactKicker:"05 / Get in touch",contactTitle:"Have a project<br>in mind?",
+        contactIntro:"Interested in automotive technology, embedded systems, software and the places where they meet. Open to conversations and new opportunities.",
+        downloadCv:"Download CV",footerFocus:"Automotive / Software / Embedded"
+      },
+      pl: {
+        navWork:"Projekty",navBackground:"Doświadczenie",navContact:"Kontakt",
+        eyebrow:"Inżynierka / Poznań, Polska",
+        heroTitle:'Łączę<br>światy<span>.</span>',
+        intro:"Łączę inżynierię pojazdów, oprogramowanie i systemy embedded — zamieniając dane, elektronikę i kod w praktyczne rozwiązania.",
+        viewCv:"Zobacz CV",selectedWorkBtn:"Wybrane projekty",
+        currently:"OBECNIE",currentDegree:"Inżynieria mechaniczna i samochodowa",
+        previously:"UKOŃCZONE",previousDegree:"Informatyka · inż.",
+        interests:"OBSZARY ZAINTERESOWAŃ",interestList:"Systemy pojazdów / dane / elektronika",
+        workKicker:"01 / Wybrane projekty",workTitle:"Projekty oparte na rzeczywistych systemach.",
+        workIntro:"Połączenie rozwiązywania problemów na torze, tworzenia systemów embedded i narzędzi programistycznych. Część projektów jest w trakcie realizacji; opisuję zakres prac, w które jestem zaangażowana.",
+        ewcDesc:"Praca na torze łącząca obsługę wyścigu, analizę osiągów i podejmowanie decyzji na podstawie danych w wyścigach długodystansowych.",
+        ewc1:"Opracowanie urządzenia opartego na ESP32 do zarządzania stintami, zliczania okrążeń i śledzenia okresów Safety Car.",
+        ewc2:"Tworzenie narzędzi wspierających strategię wyścigową i decyzje operacyjne.",
+        ewc3:"Wyścigi: Le Mans 24 Hours (2026), 8 Hours of Spa (2025), Bol d’Or (2025, 2026).",
+        buggyDesc:"Rozwój systemu telemetrycznego ESP32/C++ dla pojazdu elektrycznego, zbierającego dane ze sterownika silnika Kelly.",
+        buggy1:"Komunikacja RS232 i parsowanie ramek danych.",
+        buggy2:"Przetwarzanie danych o obrotach silnika, prądzie, napięciu i stanie baterii.",
+        buggy3:"Przepływ danych od sterownika przez zapis do dedykowanego dashboardu.",
+        pipelineDesc:"Pipeline w Pythonie, który przekształca telemetryczne dane wideo w uporządkowane i zweryfikowane dane.",
+        pipeline1:"Ekstrakcja tekstu, parsowanie, czyszczenie i walidacja.",
+        pipeline2:"Agregacja danych i automatyczne generowanie raportów.",
+        pipeline3:"Projekt rozwijany z myślą o publikacji naukowej.",
+        ioioDesc:"Indywidualny projekt innowacyjny: system wczesnego ostrzegania o pojazdach uprzywilejowanych, realizowany przy wsparciu Narodowego Centrum Badań i Rozwoju (NCBR).",
+        backgroundKicker:"02 / Wykształcenie i doświadczenie",backgroundTitle:"Dwie inżynierskie perspektywy.",
+        backgroundIntro:"Informatyka daje mi narzędzia do tworzenia oprogramowania. Inżynieria pojazdów pozwala mi stosować je w rzeczywistych systemach technicznych.",
+        raceWhen:"SEZONOWO<br>2025–2026",raceRole:"FIM Endurance World Championship (EWC) · Obsługa wyścigu, analiza telemetryczna i narzędzia wykorzystywane na torze.",
+        studyWhen:"2024–2028<br>W TRAKCIE",autoDegree:"Inżynieria mechaniczna i samochodowa (inż.)",
+        csWhen:"UKOŃCZONE<br>LUTY 2026",csDegree:"Informatyka (inż.)",finalGrade:"Ocena końcowa: 4,5 / 5,0",
+        toolkitKicker:"03 / Narzędzia",toolkitTitle:"Technologie, z których korzystam.",skillAuto:"Automotive i embedded",skillOther:"Pozostałe",
+        beyondKicker:"04 / Więcej niż kod",beyondTitle:"Współpraca ponad granicami i językami.",languages:"Języki",
+        contactKicker:"05 / Kontakt",contactTitle:"Masz pomysł<br>na projekt?",
+        contactIntro:"Interesują mnie technologie motoryzacyjne, systemy embedded, oprogramowanie i obszary, w których się łączą. Chętnie porozmawiam o nowych projektach i możliwościach współpracy.",
+        downloadCv:"Pobierz CV",footerFocus:"Automotive / Software / Embedded"
+      }
+    };
+
+    function setLanguage(lang) {
+      const dictionary = translations[lang] || translations.pl;
+      document.documentElement.lang = lang;
+      document.title = lang === "pl" ? "Maria Blandzi — Inżynierka" : "Maria Blandzi — Engineer";
+      document.querySelectorAll("[data-i18n]").forEach((element) => {
+        const value = dictionary[element.dataset.i18n];
+        if (value !== undefined) element.innerHTML = value;
+      });
+      document.getElementById("meta-description").content = lang === "pl"
+        ? "Maria Blandzi — inżynierka łącząca inżynierię pojazdów, oprogramowanie i systemy embedded."
+        : "Maria Blandzi — Engineer working across automotive systems, software and embedded electronics.";
+      document.getElementById("lang-pl").setAttribute("aria-pressed", String(lang === "pl"));
+      document.getElementById("lang-en").setAttribute("aria-pressed", String(lang === "en"));
+      try { localStorage.setItem("portfolio-language", lang); } catch (error) {}
+    }
+
+    document.getElementById("lang-pl").addEventListener("click", () => setLanguage("pl"));
+    document.getElementById("lang-en").addEventListener("click", () => setLanguage("en"));
+    let initialLanguage = "pl";
+    try {
+      const savedLanguage = localStorage.getItem("portfolio-language");
+      if (savedLanguage === "pl" || savedLanguage === "en") initialLanguage = savedLanguage;
+    } catch (error) {}
+    setLanguage(initialLanguage);
+  </script>
+
+</body>
+</html>
